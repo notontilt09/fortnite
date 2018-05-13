@@ -1,0 +1,21 @@
+<html>
+<body>
+	{% include "header.html" %}
+	<h1>Create New {{weapon_name[:-1]}}</h1>
+	<form action="#" method = 'POST'>
+	<p>Name:</p>
+	<input type = 'text' name = 'name' placeholder = 'Weapon Detail'>
+	<p>Description:</p>
+	<input type = 'text' name = 'description' placeholder = 'Weapon Description'>
+	<p>Color:</p>
+	<input type = 'text' name = 'color' placeholder = 'Weapon Color'>
+	<p>Damage:</p>
+	<input type = 'text' name = 'damage' placeholder = 'Weapon Damage'>
+	<p>Weapon Type:</p>
+	<input type = 'text' name = 'weapon' placeholder = 'Weapon Type'>
+</br>
+</br>
+	<input type = 'submit' value = 'Create'>
+	<a href ="{{url_for('showWeaponList', weapon_name = weapon_name)}}">Cancel</a>
+</body>
+</html>

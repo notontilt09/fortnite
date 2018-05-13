@@ -1,0 +1,11 @@
+<html>
+<body>
+	{% include "header.html" %}
+	<h1>Create New Weapon</h1>
+	<form action="#" method = 'POST'>
+	<p>Name:</p>
+	<input type = 'text' name = 'name' placeholder = 'New Weapon'>
+	<input type = 'submit' value = 'Create'>
+	<a href ="{{url_for('showWeapons')}}">Cancel</a>
+</body>
+</html>

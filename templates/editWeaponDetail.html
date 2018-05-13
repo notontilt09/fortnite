@@ -1,0 +1,19 @@
+<html>
+<body>
+	{% include "header.html" %}
+	<h1>Edit {{weapon_detail.name}}</h1>
+	<form action="#" method = 'POST'>
+	<p>Name:</p>
+	<input type = 'text' name = 'name' placeholder = '{{weapon_detail.name}}'>
+	<p>Description:</p>
+	<input type = 'text' name = 'description' placeholder = '{{weapon_detail.description}}'>
+	<p>Color:</p>
+	<input type = 'text' name = 'color' placeholder = '{{weapon_detail.color}}'>
+	<p>Damage:</p>
+	<input type = 'text' name = 'damage' placeholder = '{{weapon_detail.damage}}'>
+</br>
+</br>
+	<input type = 'submit' value = 'Edit'>
+	<a href ="{{url_for('showWeaponList', weapon_name = weapon_name)}}">Cancel</a>
+</body>
+</html>

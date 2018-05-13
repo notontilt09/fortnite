@@ -1,0 +1,9 @@
+<html>
+<body>
+	{% include "header.html" %}
+	<h1>Delete {{weapon_detail.name}}?</h1>
+	<form action="#" method = 'POST'>
+	<input type = 'submit' value = 'Delete'>
+	<a href ="{{url_for('showWeaponList', weapon_name = weapon_name)}}">Cancel</a>
+</body>
+</html>

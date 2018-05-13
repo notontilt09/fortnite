@@ -1,0 +1,12 @@
+<html>
+<body>
+	{% include "header.html" %}
+	<h1>Catalog of FORTNITE Weapons</h1>
+</br>
+	{% for weapon in weapons %}
+	<a href="{{url_for('showWeaponList', weapon_name = weapon.name)}}">{{weapon.name}}</a>
+</br>
+</br>
+	{% endfor %}
+</body>
+</html>

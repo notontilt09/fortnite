@@ -1,0 +1,15 @@
+<html>
+<body>
+	{% include "header.html" %}
+	<h1>{{weapon.name}}</h1>
+	<a href = "{{url_for('newWeaponDetail', weapon_name = weapon.name)}}">Create new {{weapon.name[:-1]}}</a>
+	</br>
+	</br>
+	{% for i in items %}
+	<a href = "{{url_for('showWeaponDetail', weapon_name = weapon.name, weapon_detail_name = i.name)}}">{{i.name}}</a>
+	</br>
+	</br>
+	{% endfor %}
+
+</body>
+</html>

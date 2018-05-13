@@ -1,0 +1,11 @@
+<html>
+<body>
+	{% include "header.html" %}
+	<h1>{{weapon.name}}</h1>
+	{% for i in items %}
+	<a href = "{{url_for('showWeaponDetail', weapon_name = weapon.name, weapon_detail_name = i.name)}}">{{i.name}}</a>
+	</br>
+	</br>
+	{% endfor %}
+</body>
+</html>
