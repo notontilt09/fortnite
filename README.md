@@ -11,13 +11,13 @@ This is a catalog of weapons in the popular video game Fortnite.  Users can view
 1. Run the app inside the VM by navigating to the `/vagrant` directory and running `python fortnite_catalog.py`
 2. Access the applicatoin by visiting [http://localhost:5000](http://localhost:5000) in your browser
 
-##Author
+## Author
 Daniel Weinman - [notontilt09](http://github.com/notontilt09)
 
-##License
+## License
 This project is licensed under the MIT License
 
-##Acknowledgements
+## Acknowledgements
 +  Code from Udacity's Lorenzo Brown used for many of the Google OAuth related functions
 
 
